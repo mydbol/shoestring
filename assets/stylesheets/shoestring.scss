@@ -1,0 +1,58 @@
+
+@import "normalize";
+@import "variables";
+@import "modern-business";
+body {
+font-family: Verdana, Geneva, sans-serif;
+  h1 {
+    color: white;
+  }
+}
+
+.lead{
+	padding:0px;
+}
+@import "components";
+@import "grid";
+
+div.pointstext{
+	//margin:50px;
+font-size: 12px;
+
+}
+
+
+div.text-center{
+	 text-align:center
+}
+
+.pointstext a{
+	display: inline-block;
+}
+.pointstext h3{
+	font-size:20px;
+}
+
+
+h1.page-header {
+	color: #000;
+	font-size: 20px;
+}
+
+h1.page-header > small{
+	color: grey;
+}
+
+ol.breadcrumb li {
+	display: inline-block;
+	a:link {
+		color: blue;
+		text-decoration: none;
+	}
+	a:visited {
+		color: blue;
+	}
+	a:hover {
+		color: blue;
+	}
+}

@@ -1,0 +1,47 @@
+/*
+======================================================
+KOB's COMPONENTS SECTION
+======================================================
+*/
+
+.navbar{
+	width:100%
+}
+
+.navbar-fixed-top{
+	position:fixed;
+	top:0px;
+	left:px;
+	
+}
+.navbar-right{
+	float:right;
+}
+
+.navbar-inverse{
+	background-color:$inverseColor;
+}
+
+.navbar-header{
+	float:left;
+    padding: 15px;
+}
+
+.navbar-brand{
+	font-weight: bold;
+}
+
+.navbar a{
+	display: inline;
+	color: #fff;
+	text-decoration:none;
+	padding:20px;
+}
+
+img.img-responsive{
+	width:100%;
+	padding:0px;
+}
+.section{
+	clear:both;
+}

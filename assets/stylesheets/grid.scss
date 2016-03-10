@@ -1,0 +1,80 @@
+
+/*
+======================================================
+CUSTOM GRID SYSTEM SECTION
+======================================================
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+[class*='col-'] {
+  float: left;
+ //border:1px solid grey;
+}
+
+
+[class*='col-'] > * {
+ margin : auto auto; 
+}
+.container-960{
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	width:960px;
+}
+.container-1180{
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	width:1180px;
+}
+.container{
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	width:100%;
+}
+.row{
+	clear:both;
+	padding-left: 120px;
+	padding-right: 120px;
+
+}
+.lead  .row{
+	padding : 0px;
+}
+
+:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+
+ @for $i from 1 through 12 {
+ 	.col-lg-#{$i}{
+ 			width: ($i /12) * 100%;
+ 			float:left;
+ 			padding : 20px;
+ 	} 
+
+ }
+
+
+
+
+@media (min-width: $screen-xs){
+	background-color:red;
+}
+@media (min-width: $screen-sm){}
+@media (min-width: $screen-md){
+	background-color:red;
+}
+@media (min-width: $screen-lg){}
+@media (min-width: $screen-xlg){}
+
